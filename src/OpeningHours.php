@@ -25,5 +25,4 @@ class OpeningHours
         $date = $this->dayRange->getNextOpeningDay($date);
         return $this->hourRange->setStartingTimeTo($date);
     }
-
 }

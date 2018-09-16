@@ -26,5 +26,4 @@ class DayRange
 
         return false;
     }
-
 }

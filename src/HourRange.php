@@ -2,7 +2,6 @@
 
 class HourRange
 {
-
     private $fromHour;
     private $toHour;
 
@@ -22,5 +21,4 @@ class HourRange
     {
         return $date->setTime($this->fromHour, 0);
     }
-
 }

@@ -8,13 +8,13 @@ use Prophecy\Argument;
 
 class HourRangeSpec extends ObjectBehavior
 {
-    function it_is_initializable()
+    public function it_is_initializable()
     {
         $this->beConstructedWith(8, 14);
         $this->shouldHaveType(HourRange::class);
     }
 
-    function it_includes_some_hours()
+    public function it_includes_some_hours()
     {
         $this->beConstructedWith(8, 14);
         $this->includes((new \DateTimeImmutable())->setTime(11, 0))->shouldReturn(true);
